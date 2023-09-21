@@ -1,13 +1,1073 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="tr">
   <head>
     <meta charset="UTF-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <title></title>
+    <meta name="description" content="">
+    <link rel="icon" href="./images/favicon.png" type="image/webp">
+    <link rel="canonical" href="">
+    <meta name="robots" content="noarchive">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <style amp-custom>
+      * {
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",Arial,sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: -.2px;
+        background-color: #262626;
+      }
+
+      body, a, div, h1, h2, h3, header, footer, li, table, tr, td, tbody {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        position: relative;
+        z-index: 1000;
+        gap: 40px;
+        top: 0;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        padding: 3px 10px;
+        background-color: black;
+        text-align: center;
+        color: #fff;
+      }
+
+      header > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1040px;
+        margin: 0 auto;
+      }
+      .buttons {
+        display: flex;
+        gap: 20px;
+      }
+
+      .buttons > a {
+        background-color: #f8ff13;
+        white-space: nowrap;
+        padding: 10px 20px;
+        color: black;
+        text-decoration: none;
+        transition: all 0.2s linear;
+        font-weight: 600;
+      }
+
+      .buttons > a:hover {
+        color: #f8ff13;
+        transform: scale(1.15);
+        border: 1px solid #f8ff13;
+        background-color: black;
+      }
+
+      .table_container {
+        overflow: auto;
+      }
+
+      main {
+        max-width: 1040px;
+        margin: 0 auto;
+      }
+
+      footer {
+        margin-top: 30px;
+        background-color: black;
+        padding: 32px 0;
+      }
+
+      footer > div {
+        max-width: 1040px;
+        margin: 0 auto;
+        color: #fff;
+      }
+
+      .logo_container {
+        display: flex;
+        align-items: center;
+        height: 90px;
+      }
+
+      .logo_container > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main > div:first-of-type {
+        border-bottom: 1px solid #ed1c24;
+      }
+
+      .paribahis-logo {
+        width: 150px;
+        height: 30px;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      .center_image {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        width: 60%;
+      }
+
+      section {
+        padding: 20px;
+        padding-top: 0;
+      }
+
+      section:first-of-type {
+        padding: 20px;
+      }
+
+      h1 {
+        color: #fff;
+        text-align: center;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      h2, h3, h4 {
+        color: #fff;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.3;
+        letter-spacing: -1.2px;
+      }
+
+      table {
+        display: block;
+        margin: 15px auto;
+        border-collapse: collapse;
+        width: fit-content;
+        overflow: auto;
+        min-width: 450px;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+      table td {
+        border: 1px solid #fff;
+        padding: 10px;
+        color: #fff;
+        vertical-align: middle;
+      }
+
+      li {
+        color: #fff;
+      }
+
+      .image_container {
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        margin-top: 30px;
+        gap: 30px;
+      }
+
+      .paribahis_image {
+        width: 40%;
+        height: 100%;
+      }
+
+      .canli, .destek, .giris {
+        width: 300px;
+      }
+
+      .list_titles > li > a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .container {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+
+      .questions-title {
+        font-weight: 700;
+        font-size: 24px;
+        color: white;
+        margin-top: 60px;
+        margin-bottom: 30px;
+      }
+
+      .dropdown {
+        min-width: 15em;
+        position: relative;
+        margin-top: 16px;
+      }
+
+      .select {
+        background: #af1900;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 2px #af1900 solid;
+        border-radius: 0.5em;
+        padding: 12px 16px;
+        cursor: pointer;
+      }
+
+      .selected {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .select-clicked {
+        border: 1px #FFD60E solid;
+        border-bottom: none;
+      }
+
+      .caret {
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 6px solid #fff;
+        transition: 0.3s;
+      }
+
+      .caret-rotate {
+        transform: rotate(180deg);
+      }
+
+      .menu {
+        list-style: none;
+        border: 1px #af1900 solid;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        top: 3em;
+        width: 100%;
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+        margin-top: 16px;
+      }
+
+      .menu li {
+        padding: 12px 16px;
+        border-radius: 0.5em;
+        cursor: pointer;
+        font-size: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      .menu-open {
+        display: block;
+        padding-left: 0;
+        opacity: 1;
+        color: #fff;
+        background-color: #af1900;
+        opacity: 0.8;
+      }
+
+      .dropdown__element {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+
+      .dropdown--last {
+        margin-bottom: 93px;
+      }
+
+      footer > div {
+        text-align: center;
+      }
+
+      @keyframes zoom {
+        0%, 100% {
+          transform: scale(1,1);
+        } 50% {
+          transform: scale(1.2,1.2);
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .dropdown {
+          width: auto;
+          margin-left: 0;
+        }
+
+        .image_container {
+          flex-direction: column;
+        }
+      }
+
+      @media (max-width: 900px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .homepage {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 720px) {
+        header > div {
+          flex-direction: column;
+        }
+
+        header {
+          padding-bottom: 20px;
+        }
+
+        ul {
+          padding-left: 10px;
+        }
+
+        .center_image {
+          width: 100%;
+        }
+
+        .image_container {
+          flex-direction: column;
+        }
+
+        .paribahis_image {
+          width: 100%;
+        }
+
+        .dropdown {
+          width: calc(100% - 32px);
+          margin-left: 16px;
+        }
+
+        .select {
+          gap: 10px;
+        }
+
+        .menu li, .selected {
+          font-size: 13px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header>
+      <div>
+        <div class="logo_container">
+          <a href="/">
+            <amp-img src="images/logo.svg" alt="logo" class="paribahis-logo" width="150" height="30" layout="responsive"></amp-img>
+          </a>
+        </div>
+        <div class="buttons">
+          <a href="/">Kayıt ol</a>
+          <a href="/">Giriş yap</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section>
+        <h1>Paribahis – Giriş ve Bonus Kodu 2023</h1>
+        <amp-img src="images/paribahis1.jpg" alt="paribahis main page" class="center_image" width="600" height="229" layout="responsive"></amp-img>
+        <p>Sanal bahis alanında devrim yaratan nitelikleri ve hizmetleri ile üyelerinin her 
+          daim takdirini kazanan Paribahis, yatırımcılarının daimi kazanç sağlamaları için 
+          çaba gösterir. Bahis yatırımlarında kategori fark etmeksizin yüksek oranlar, 
+          bonuslar, özel bonus kodu, anlık giriş çözümleri ve çok daha fazlasıyla Paribahis’in
+          bütünüyle kusursuz bir firma olduğunu söylemek pek de yanlış olmayacaktır.
+        </p>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td>Sanal Bahis Sitesinin Adı:</td>
+                <td>Paribahis</td>
+              </tr>
+              <tr>
+                <td>Resmi Adresi:</td>
+                <td>www.paribahis.com</td>
+              </tr>
+              <tr>
+                <td>Lisansı:</td>
+                <td>Curcao 8048/JAZ2014-034</td>
+              </tr>
+              <tr>
+                <td>Şirket Sicil Numarası:</td>
+                <td>126608</td>
+              </tr>
+              <tr>
+                <td>Merkezi Ofisi:</td>
+                <td>İngiltere</td>
+              </tr>
+              <tr>
+                <td>Hoş Geldin Bonusu:</td>
+                <td>8.000 TL + 225 FS(FreeSpin)</td>
+              </tr>
+              <tr>
+                <td>Kuruluş Yılı:</td>
+                <td>2021</td>
+              </tr>
+              <tr>
+                <td>Temel Altyapı Sağlayıcı Firmaları:</td>
+                <td>BGaming, Endrophina, Evolution 
+                  Gaming, EvoPlay, Fazi, Betsolutions, 
+                  iSoftBet, Playson, NoLimit City, Oryx 
+                  Gaming, Play’n Go, Pragmatic Play, 
+                  Playtech, QuickSpin, RedTiger, 
+                  Spinomenal, YGGDRASIL
+                </td>
+              </tr>
+              <tr>
+                <td>Ödeme Altyapıları:</td>
+                <td>Kripto, CepBank, Visa, Payfix, iSettle, 
+                  Jeton, Papara, QR Kod,MasterCard</td>
+              </tr>
+              <tr>
+                <td>Minimum Para Yatırma:</td>
+                <td>20 TL</td>
+              </tr>
+              <tr>
+                <td>Minimum Para Çekme:</td>
+                <td>50 TL</td>
+              </tr>
+              <tr>
+                <td>Diğer Bahis Sitelerine Göre Oran
+                  Avantajı Yüzdesi</td>
+                <td>%46,9</td>
+              </tr>
+              <tr>
+                <td>Canlı Destek Var mı?</td>
+                <td>Mevcut</td>
+              </tr>
+              <tr>
+                <td>Bonus Etkinlikleri Var mı?</td>
+                <td>Mevcut</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Paribahis Giriş Adresi</h2>
+        <p>Türkiye’deki tüm sanal bahis sitelerinde karşılaşılan ve genel manada da çok 
+          popüler, aynı zamanda çok tercih edilen sitelerde sıkça görülen durumlardan biri 
+          de adres değişikliğidir. Paribahis de Türkiye’nin en büyük ve en güvenilir sanal 
+          bahis firmalarından biri olmasından ötürü, adres değişikliği yaşanılabilen 
+          durumların başında gelir. Adres değişikliği sonucunda güncel Paribahis giriş adresi
+          bulmak son derece önemlidir.
+        </p>
+        <p>İlk defa adres değişikliği gibi bir durumla karşılaşıyorsanız, bu noktada biraz 
+          endişelenmeniz mümkündür ancak başta sitemiz olmak üzere diğer birçok 
+          kaynaktan giriş adresleri hakkında bilgi alabilirsiniz. Paribahis firmasının giriş 
+          adresi için kullanabileceğiniz kaynaklar aşağıdaki gibidir:
+        </p>
+        <div class="image_container">
+          <ul>
+            <li>Sitemiz Üzerinden Giriş Adresi: Paribahis ve sitemiz arasında 
+              imzalanan protokol neticesinde, yatırımcıların sitemiz üzerinden istedikleri 
+              an güncel adresleri temin etmeleri mümkündür. Sitemizi favorilerinize 
+              kaydetmenizin ardından, istediğiniz her an sitemize giriş yapıp güncel 
+              Paribahis adresi ve diğer bilgilere ulaşabilirsiniz.
+            </li>
+            <li>SMS ve E-Posta: Eğer Paribahis hesap bilgilerinize cep telefonu ve e-
+              posta adresi gibi bilgileriniz, güncel ve sürekli olarak kullanmış olduğunuz 
+              bilgilerden oluşuyorsa, herhangi bir adres değişikliğinde yeni adresler 
+              Paribahis tarafından otomatik olarak tarafınıza gönderilir.
+            </li>
+            <li>Telegram: Paribahis’in duyuru ve iletişim anlamında kullandığı kanallardan
+              biri olan Telegram kanalı ile güncel adreslere hızlı bir şekilde ulaşabilirsiniz. 
+              “paribahis_resmi” isimli Telegram kanalına katılım sağlayarak, Paribahis 
+              giriş adresine istediğiniz an ulaşabilirsiniz.
+            </li>
+            <li>Whatsapp: +447934177828 numaralı telefonla Whatsapp üzerinden 
+              iletişime geçmeniz halinde, yetkililer tarafından size güncel adres hakkında
+              bilgi verilebilecektir.
+            </li>
+            <li>Mobil Uygulama: Paribahis firmasının Android ve IOS işletim 
+              sistemlerinde geçerli olan mobil uygulamasını telefonunuza indirerek, giriş 
+              adresi konusunda istediğiniz an destek alabilirsiniz.
+            </li>
+            <li>Sosyal Medya ile Giriş: Paribahis’in Türkiye pazarında aktif olarak 
+              kullandığı Instagram, Twitter ve Facebook gibi hesaplarını takip ederek, 
+              güncel giriş adreslerine kısa süre içerisinde ulaşabilirsiniz.
+            </li>
+          </ul>
+          <div>
+            <amp-img src="images/paribahis-2-giris.jpg" alt="giris" class="giris" width="300" height="230" layout="responsive"></amp-img>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Paribahis Bonusları</h2>
+        <p>Paribahis firması tarafından yatırımcılara birçok bonus sunulur. Sunulan bu 
+          Paribahis bonusları farklı farklı kategorilerde değerlendirilebilir ve her bir bonus 
+          türünün başlıca avantajları vardır. Genel manada bonuslara dair bilgiler ise 
+          aşağıda yer alır:
+        </p>
+        <amp-img src="images/paribahis-3-bonuslari.jpg" alt="bonusalri" class="center_image" width="600" height="204" layout="responsive"></amp-img>
+        <ul>
+          <li>Para Yatırma Bonusları: Para yatırma işlemi yaptığınızda, yatırdığınız 
+            tutar, para yatırma kanalı vb. birçok detaya göre tarafınıza tanımlanan 
+            bonus türüdür. Paribahis tarafından sunulan para yatırma bonuslarını 
+            hemen alt kısımda inceleyebilirsiniz:
+          </li>
+        </ul>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td>Para Yatırma Bonusları:</td>
+                <td>
+                  <ul>
+                    <li>%35 Oranında Binance Para 
+                      Yatırma Bonusu</li>
+                    <li>%30 Oranında Kripto Para 
+                      Yatırma Bonusu</li>
+                    <li>Tüm Para Yatırma Yöntemlerine 
+                      %15 Oranında Bonus</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li>Kayıp Bonusları: Bahis yatırımlarınız sonucunda yaşadığınız kayıp 
+            durumlarının telafisi adına sunulan bonuslardır. Paribahis tarafından 
+            sağlanan bonuslar ise aşağıdaki gibidir:</li>
+        </ul>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td>Kayıp Bonusları:</td>
+                <td>
+                  <ul>
+                    <li>%25 Oranında Casino 
+                      Kategorisinde Limitsiz İade 
+                      Bonusu (Günlük)</li>
+                    <li>Spor Bahislerinde Günlük 3.000 
+                      TL’ye Kadar %10 Oranında İade 
+                      Bonusu</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li>Üyelik Bonusları: Paribahis tarafından üye olmanız nedeniyle sunulan ve 
+            çeşitli şartları sağlamanız durumunda verilen bir bonus türüdür. Paribahis 
+            bonusları içerisinde yer alan üyelik bonuslarına dair detaylar aşağıdaki 
+            gibidir:</li>
+        </ul>
+        <div class="table_container">
+          <table>
+            <tbody class="center">
+              <tr>
+                <td colspan="2">Üyelik Bonusları:</td>
+              </tr>
+              <tr>
+                <td>Paribahis Puan Bonusu:</td>
+                <td>Paribahis’te yapmış olduğunuz
+                  yatırımlar ve sitede geçirdiğiniz süre için üyelik puanı alırsınız.
+                  Almış olduğunuz her 1.000 puan,
+                  10 TL nakde bedel olur.</td>
+              </tr>
+              <tr>
+                <td>Paribahis Doğum Günü Özel
+                  Bonusu:</td>
+                <td>Paribahis tarafından doğum
+                  gününüzde size özel çeşitli sürpriz
+                  bonuslar sunulur.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <ul>
+          <li>Ödül Havuzlu Turnuvalar veya Etkinlikler: Paribahis ve çeşitli bahis 
+            altyapı sağlayıcıları tarafından düzenlenen turnuvalar ile yatırımcıların 
+            çeşitli oyunlar ve kategorilerde devasa ödüller kazanmaları mümkün olur. 
+            Güncel olarak sunulan turnuva ve ödülleri hemen alt kısımda 
+            inceleyebilirsiniz:</li>
+        </ul>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td>Paribahis Turnuva veya Ödül
+                  Havuzlu Bonus Etkinlikleri:</td>
+                <td>
+                  <ul>
+                    <li>30.000.000 TL Ödül Havuzlu 
+                      Drop and Wins Pragmatic Play 
+                      Bonus Etkinliği</li>
+                    <li>EvoPlay Moon Star 40.000 Euro 
+                      Ödül Havuzlu Bonus Etkinliği</li>
+                    <li>Playtech 100.000 USD Ödül 
+                      Havuzlu Bonus Etkinliği</li>
+                    <li>Aviatrix 1.000.000 Euro Ödül 
+                      Havuzlu Bonus Etkinliği</li>
+                    <li>Evolution 30.000 Euro Ödül 
+                      Havuzlu Bonus Etkinliği</li>
+                    <li>Playson Non Stop Drop 
+                      4.000.000 Euro Ödül Havuzlu 
+                      Bonus Etkinliği</li>
+                  </ul>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Paribahis Canlı Casino</h2>
+        <p>Paribahis bünyeside en çok tercih edilen kategorilerden biri de canlı Casino olarak
+          tanımlanabilir. Söz konusu kategorinin bu denli tercih edilmesinin en temel 
+          nedenlerinden biri de sahip olduğu devasa bahis imkanlarıdır. Slot, poker, rulet, 
+          blackjack, masa oyunları, zar oyunları ve daha birçok oyun seçeneğinin 
+          bulunduğu canlı Casino alanında, yüksek kazanç fırsatları yatırımcıları bekler. 
+          Oyunlara dair rehberler, Türk kurpiyerler, etkileyici sunum ve animasyonlar ile 
+          hem oyun keyfini zirvede yaşamak hem de gelir elde etmek mümkündür.
+        </p>
+        <amp-img src="images/paribahis-4-canli-casino.jpg" alt="canli casino" class="center_image" width="600" height="226" layout="responsive"></amp-img>
+        <p>Genel olarak Paribahis canlı Casino olanakları aşağıdaki gibidir:</p>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td>Canlı Casino Alt Kategorisi:</td>
+                <td>Oyun Seçenekleri ve Sağlayıcılar:</td>
+              </tr>
+              <tr>
+                <td>En Popüler:</td>
+                <td>Gonzo’s Treasure Map Live, Aviator, 
+                  Funky Time Live, Beast Mode, Sugar 
+                  Rush, Wild West Gold, Kingdom of the 
+                  Dead, Milk Shake, Gates of Olympus</td>
+              </tr>
+              <tr>
+                <td>Rulet Oyunları:</td>
+                <td>Gold Vault Rulet, Lightning Rulet 
+                  Türkçe, Live Roulette Turkish, 
+                  Immersive Roulette</td>
+              </tr>
+              <tr>
+                <td>Poker Oyunları:</td>
+                <td>Three Card Poker, Royal Poker, Cricket 
+                  War, BetOn Pker, Poker Bet</td>
+              </tr>
+              <tr>
+                <td>Baccarat Oyunları:</td>
+                <td>Prosperity Tree Baccarat, Speed No 
+                  Comission Baccarat, Baccarat 
+                  (Playtech), BetOn Baccarat</td>
+              </tr>
+              <tr>
+                <td>Blackjack Oyunları:</td>
+                <td>Infinite Blackjack, Blacjack VIP M, 
+                  Türkçe Blackjack 1, Blackjack Party, 
+                  Gold 6 Blackjack</td>
+              </tr>
+              <tr>
+                <td>Canlı Casino Sağlayıcıları:</td>
+                <td>Amusnet (EGT), Evoluiton, Pragmatic 
+                  Play, Ezugi, TVBET, Playtech Live</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Paribahis Bahis Sitesi</h2>
+        <p>Paribahis sadece temel olarak değil, aynı zamanda tüm kapsamlarıyla birlikte bir 
+          yatırımcının herhangi bir bahis sitesinde aradığı tüm özelliklere sahiptir. Bu 
+          nedenle Paribahis bahis sitesi olarak sanal bahis alanında deneyimliyseniz ya da 
+          deneyimsizseniz, her anlamda size hitap eder.
+        </p>
+        <amp-img src="images/paribahis-5-bahis-sitesi.jpg" alt="bahis sitesi" class="center_image" width="600" height="331" layout="responsive"></amp-img>
+        <p>Paribahis’i anlatırken artı yönleri ve eksi yönleri olarak iki farklı şekilde 
+          detaylandırmak, söz konusu bahis sitesine dair tüm detaylara çok daha kolay bir 
+          şekilde hakim olmanıza olanak sağlar.
+        </p>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td><strong>Paribahis’in Artı Yönleri</strong></td>
+                <td><strong>Paribahis’in Eksi Yönleri</strong></td>
+              </tr>
+              <tr>
+                <td>Paribahis kolay ve erişilebilirlik 
+                  düzeyi yüksek bir arayüze 
+                  sahiptir.</td>
+                <td>Gelişmiş ve kazançlı bahis 
+                  olanakları yatırımcılarda çeşitli 
+                  bahis bağımlılığı durumlarına 
+                  yol açabilir.</td>
+              </tr>
+              <tr>
+                <td>Gelişmiş bir bahis sitesi 
+                  tasarımıyla yatırımcılarına her 
+                  kategoride kolay bahis imkanı 
+                  sağlar.</td>
+                <td rowspan="7">Bonuslar için belirlenen 
+                  minimum yatırım tutarları bir 
+                  miktar daha azaltılabilir.</td>
+              </tr>
+              <tr>
+                <td>Ödeme yöntemleri bakımından 
+                  en hızlı sitelerden biri olarak, 
+                  kullanıcı yorumları ile 
+                  tescillenmiş bir sitedir.</td>
+              </tr>
+              <tr>
+                <td>Güven skoru yüksektir ve 
+                  Paribahis her yatırımcıda güven 
+                  duygusunu çağırıştırır.</td>
+              </tr>
+              <tr>
+                <td>7/24 aktif canlı desteği 
+                  sayesinde yatırımcılarının 
+                  istedikleri her an, her türlü 
+                  destek talebine hızlı yanıt verir.</td>
+              </tr>
+              <tr>
+                <td>Lisanslı, kurallara, yasalara 
+                  uygun ve global anlamda 
+                  hizmet veren bir sanal bahis 
+                  sitesidir.</td>
+              </tr>
+              <tr>
+                <td>Türkiye’nin en geniş bahis 
+                  tahmin seçenekleri ve bahis 
+                  yatırım imkanlarına sahip olan 
+                  bir bahis sitesidir.</td>
+              </tr>
+              <tr>
+                <td>Casino oyunlarında demo yani, 
+                  ücretsiz oyna seçeneği ile 
+                  oyunları önceden 
+                  deneyimlemek mümkün olur.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Paribahis Şikayet</h2>
+        <p>Sadece Paribahis özelinde değil, herhangi bir sanal bahis sitesine üye olmadan 
+          önce mutlaka o bahis sitesinin yatırım olanakları hakkında bilgi sahibi olmak 
+          önemlidir. Nitekim hakkında yapılan şikayetlerden de haberdar olmak gerekir. 
+          Bunun nedeni ise şikayet konusunda yatırımcıların gerçek deneyimlerinden 
+          bahsetmeleridir. Haliyle bu deneyimleri önceden bilmek gerek tedbir gerekse fikir
+          elde etmek için son derece büyük önem taşır.
+        </p>
+        <p>Haliyle Paribahis özelinde araştırma yapan yatırımcılar, Paribahis şikayet 
+          konularına herhangi bir şekilde rastlamazlar. Çünkü;
+        </p>
+        <ul>
+          <li>Paribahis bağlı olduğu lisans kurumları nedeniyle hakkında herhangi bir 
+            şikayete neden olacak duruma yol açamaz.</li>
+          <li>Üyelerinin her daim sorunlarına akılcı çözümler sunarak yardımcı olmaya 
+            çalışır.</li>
+          <li>Daima tüm personelleri ve birimleriyle birlikte müşteri memnuniyeti odaklı 
+            hareket eder.</li>
+          <li>Oluşabilecek şikayet konularını önceden belirler ve üyeleri mağdur 
+            olmadan o konuda direkt olarak çözüm getirir.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Paribahis İletişim Seçenekleri</h2>
+        <p>Paribahis’in en çok önem verdiği konulardan biri de müşterileriyle her daim 
+          iletişim halinde olmaktır. Nitekim bu önemin getirisi olarak da yatırımcılarıyla 7/24
+          irtibatta olabileceği birçok iletişim kanalını kullanıma sunmuştur.
+        </p>
+        <p>Genel olarak Paribahis iletişim seçenekleri ve bu iletişim seçeneklerine dair 
+          detayları hemen aşağıda bulabilirsiniz:
+        </p>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr>
+                <td>İletişim Kanalının Adı:</td>
+                <td>İletişim Seçeneği Detayları:</td>
+              </tr>
+              <tr>
+                <td>Telegram:</td>
+                <td>Eğer Telegram’da “paribahis_resmi” 
+                  isimli hesapla iletişime geçerseniz, 
+                  istediğiniz an Paribahis yetkilileriyle 
+                  bağlantı kurabilirsiniz.</td>
+              </tr>
+              <tr>
+                <td>E-posta:</td>
+                <td>destek@paribahis.com veya support@paribahis.com isimli e-posta 
+                  adreslerine, iletişime geçmek 
+                  istediğiniz konu hakkında e-mail 
+                  göndererek 7/24 Paribahis’e 
+                  ulaşabilirsiniz.</td>
+              </tr>
+              <tr>
+                <td>Canlı Destek:</td>
+                <td>Sitenin hemen sol alt bölümünde yer 
+                  alan “Canlı Destek” penceresine 
+                  tıklayarak, gerçek kişilerden oluşan 
+                  Paribahis canlı destek birimleriyle 
+                  iletişim kurabilirsiniz.</td>
+              </tr>
+              <tr>
+                <td>Sosyal Medya:</td>
+                <td>Paribahis firmasının Instagram, 
+                  Facebook ve Twitter sayfalarını takip 
+                  ederek, sosyal medya üzerinden 
+                  firmayla kısmi olarak iletişime 
+                  geçebilirsiniz.</td>
+              </tr>
+              <tr>
+                <td>Whatsapp:</td>
+                <td>+447934177828 numaralı telefondan 
+                  Paribahis yetkilileriyle Whatsapp 
+                  üzerinden iletişim kurabilirsiniz.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section>
+        <h2>Paribahis Para Yatırma İşlemleri</h2>
+        <p>Paribahis, 10’dan fazla para yatırma kanalı ile üyelerine her daim geniş para 
+          yatırma imkanları sunar. Her para yatırma kanalına dair limitler vardır ve 
+          yatırımcıların bu limitler doğrultusunda her gün istedikleri kadar yatırım 
+          yapmaları mümkündür.
+        </p>
+        <div class="table_container">
+          <table>
+            <tbody>
+              <tr class="center">
+                <td><strong>Para Yatırma
+                  Kanalının Adı:</strong></td>
+                <td>Minimum Yatırım (TL):</td>
+                <td><strong>Maksimum Yatırım
+                  (TL):</strong></td>
+              </tr>
+              <tr>
+                <td>Havale</td>
+                <td>500</td>
+                <td>100.000</td>
+              </tr>
+              <tr>
+                <td>Kolay Havale</td>
+                <td>100</td>
+                <td>100.000</td>
+              </tr>
+              <tr>
+                <td>Cryptocurrency</td>
+                <td>50</td>
+                <td>1.000.000</td>
+              </tr>
+              <tr>
+                <td>Kredi Kartı (VISA – 
+                  MASTERCARD)</td>
+                <td>50</td>
+                <td>1.000</td>
+              </tr>
+              <tr>
+                <td>Papara</td>
+                <td>500</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Kredi Kartı</td>
+                <td>50</td>
+                <td>1.500</td>
+              </tr>
+              <tr>
+                <td>Papara</td>
+                <td>100</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>MPay Papara</td>
+                <td>50</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>iSettle Havale</td>
+                <td>100</td>
+                <td>100.000</td>
+              </tr>
+              <tr>
+                <td>PeP</td>
+                <td>25</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>MEFETE</td>
+                <td>25</td>
+                <td>20.000</td>
+              </tr>
+              <tr>
+                <td>MPay Payfix</td>
+                <td>25</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Maxi Payfix</td>
+                <td>25</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Paybol</td>
+                <td>50</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Maxi Papara</td>
+                <td>50</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Jeton</td>
+                <td>50</td>
+                <td>50.000</td>
+              </tr>
+              <tr>
+                <td>Popypara</td>
+                <td>50</td>
+                <td>50.000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p><strong>Paribahis Para Yatırma İşlemleri Nasıl Yapılır?:</strong></p>
+        <ol>
+          <li>Öncelikle “Cüzdan” sayfasına giriş yapınız.</li>
+          <li>Ardından açılan sayfada ödeme yöntemlerinden herhangi birini, limitlerine 
+            dikkat ederek seçiniz.</li>
+          <li>Daha sonra para yatıracağınız tutarı giriniz ve bonus seçimi yapınız.</li>
+          <li>Hemen ardından Paribahis tarafından verilen hesap bilgilerini kaydediniz ve
+            gerekliyse doğrulama işlemlerini gerçekleştiriniz.</li>
+          <li>Verilen hesap bilgilerine para gönderme işlemi yapınız.</li>
+          <li>Ardından dekontu Paribahis sistemlerine yükleyiniz ya da canlı destek 
+            birimlerine aktarınız.</li>
+          <li>Paribahis tarafından kontrollerin sağlanmasının hemen ardından yatırmış 
+            olduğunuz tutar hesabınızda görüntülenecektir.</li>
+        </ol>
+        <amp-img src="images/paribahis-6-para-yatirma.jpg" alt="para yatirma" class="center_image" width="600" height="60" layout="responsive"></amp-img>
+      </section>
+      <section>
+        <h2>Paribahis Güncel Adres</h2>
+        <p>Paribahis’in giriş adresinin sürekli olarak değiştiğinden daha önce bahsetmiştik. 
+          Değişen adres nedeniyle Paribahis güncel adres temini gerekliliği en temel 
+          durumlardan biridir ancak bu noktada asıl dikkat edilmesi gereken unsur, 
+          yatırımcıların güncel adres temin ederken sahte adreslere yönelmemektir.
+        </p>
+        <p>Paribahis’in genel güncel adres formatı ve adres değişikliği sonrasında dikkat 
+          edilmesi gereken detaylarla birlikte ortaya çıkan durum aşağıdaki gibidir:
+        </p>
+        <ul>
+          <li>Paribahis adres formatı olarak “paribahis(sayı).com” şeklinde bir format 
+            kullanır.</li>
+          <li>Herhangi bir giriş adresi değiştiğinde yeni adres bir öncekiyle çok benzerdir
+            ve yukarıda belirtmiş olduğumuz “sayı” bölümü değişiklik gösterir.</li>
+          <li>Yeni bir adres temin ederken bu bölümün değişmiş olduğundan emin 
+            olmanız gerekir.</li>
+          <li>Bu adres formatı dışında elde ettiğiniz adresler tamamen sahte adreslerdir 
+            ve dolandırıcılık amacıyla kullanılabilir.</li>
+          <li>Bu nedenle mutlaka adres değişikliklerinde hem güvenilir kaynaklardan 
+            güncel adresi temini yapmalı hem de formata dikkat etmelisiniz.</li>
+          <li>En güncel adreslere ise direkt olarak sitemiz üzerinden güvenli bir şekilde 
+            ulaşabilirsiniz.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Paribahis Bonus Kodu 2023</h2>
+        <p>Paribahis firmasının üyelik işlemleri öncesinde veya sonrasında yatırımcılara 
+          tanımladığı bonus kodu ile yatırımcıların bonuslar konusunda ciddi avantajlar elde
+          etmeleri söz konusu olabilir.
+        </p>
+        <p>Bonus kodu ile ekstra bonuslar, bonuslara dair sağlanan oranların yükselmesi ve 
+          daha birçok avantaj beraberinde gelir. Paribahis bizzat olarak yatırımcılara bu 
+          kodları verebilir ya da Paribahis bonus kodu 2023 itibariyle sitemiz başta olmak 
+          üzere, birçok kaynaktan elde edilebilir.
+        </p>
+        <p>Elde edilen bonus kodunun aktif edilmesi gerekir ve aşağıdaki adımlarla bonus 
+          kodunun aktif edilmesi mümkündür:
+        </p>
+        <ol>
+          <li>İlk olarak profil simgesine tıklayınız.</li>
+          <li>Ardından “Bonuslarım” seçeneği ile ilgili sayfaya ilerleyiniz.</li>
+          <li>Hemen ardından “Bonus Kodu” alanına, sahip olduğunuz bonus kodunu 
+            giriniz.</li>
+          <li>Sistem kontrollerinin hemen ardından bonus kodu aktif edilecektir ve sahip 
+            olduğunuz bonus hesabınıza tanımlanacaktır.</li>
+        </ol>
+      </section>
+      <section>
+        <h2>Paribahis Mobil</h2>
+        <p>Paribahis, üyelerinin çok daha siteye ve bahis sistemine erişim sağlayabilmeleri 
+          adına mobil uygulama seçeneğini devreye sokmuştur. Hem Android hem de IOS 
+          işletim sistemlerinde çalışan bu mobil uygulama ile yatırımcıların artık Paribahis 
+          giriş adresi aramadan, tek bir dokunuşla bahis sistemine giriş yapmaları mümkün 
+          olur.
+        </p>
+        <p>Her işletim sistemi için farklı yükleme detayları vardır ve mobil uygulamayı 
+          yükleyebilmek adına gerek IOS gerekse Android işletim sistemleri adına gerekli 
+          talimatları aşağıdaki bölümde bulabilirsiniz.
+        </p>
+        <p><strong>APK İndir (Android)</strong></p>
+        <p>Paribahis mobil uygulamasının Android işletim sistemleri için APK dosyasını 
+          indirmek adına aşağıdaki adımları takip etmeniz yeterli olacaktır:</p>
+          <ol>
+            <li>Paribahis’in mobil uygulama sayfasına giriş yapınız.</li>
+            <li>Android işletim sistemini seçiniz.</li>
+            <li>Ardından dosya indirme işlemini onaylayınız ve uygulama dosyasının 
+              cihazınıza inmesini bekleyiniz.</li>
+            <li>Hemen ardından cihazınıza inen kurulum dosyasını çalıştırınız.</li>
+            <li>Yükleme işleminin başlamasıyla birlikte “bilinmeyen kaynaklardan 
+              yüklenen uygulamalara izin ver” şeklindeki uyarıyı kabul ediniz.</li>
+            <li>Sonrasında uygulamanın telefonunuza yüklenmesi ve artık tek bir 
+              dokunuşla kullanılabilir hale gelmesi mümkün olacaktır.</li>
+          </ol>
+          <p><strong>IOS İndir (iPhone, iPad vb.)</strong></p>
+          <p>Paribahis mobil uygulamasının IOS işletim sistemine sahip cihazlarda kullanımı ve
+            kurulumu için aşağıdaki adımları takip edebilirsiniz:
+          </p>
+          <ol>
+            <li>Paribahis’in mobil uygulama sayfasına giriş yapınız.</li>
+            <li>Ardından IOS işletim sistemini seçiniz ve karşınıza çıkan QR kodunu 
+              kameraya okutunuz.</li>
+            <li>Hemen sonrasında uygulamayı tarayıcı yardımıyla ana ekranınıza ekleyiniz.</li>
+            <li>Uygulamanın ana ekrana eklendiğinden emin olunuz ve istediğiniz zaman 
+              uygulamaya tıklayarak, güncel Paribahis sistemine erişim sağlayabilirsiniz.</li>
+          </ol>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <span>© 2023 Paribahis</span>
+      </div>
+    </footer>
   </body>
 </html>
